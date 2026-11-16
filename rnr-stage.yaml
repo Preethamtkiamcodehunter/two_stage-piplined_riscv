@@ -3,8 +3,8 @@ stage: pipelined_riscv
 
 
 modules:
-  pipelined_riscv
-:
+  pipelined_riscv:
+    top_module: two_stage_riscv_i
     source_files:
       - ALU/rtl.sv
       - ALU_Control/rtl.sv
@@ -17,4 +17,3 @@ modules:
       - Register_File/rtl.sv
       - WB_Stage/rtl.sv
       - Two_Stage_RISCV_I/rtl.sv
-   top_module: two_stage_riscv_i
